@@ -205,15 +205,16 @@ label {
 
 .descrip {
     transition: .7s;
-    
+
 }
+
 .description {
     margin-left: 5px;
 }
 
-.etoile {
-    margin-top: 50px;
-}
+/* .etoile {
+    top: 50px;
+} */
 
 /* structure */
 #content {
@@ -397,6 +398,7 @@ label {
 }
 
 #populaires>article {
+    position: relative;
     display: inline-block;
     width: 343px;
     height: 144px;
@@ -429,6 +431,10 @@ label {
     bottom: 12px;
 }
 
+#populaires article .populars-stars {
+    position: absolute;
+}
+
 /* Activités */
 #hobbies {
     width: 1440px;
@@ -454,7 +460,7 @@ label {
 
 /* footer */
 #footer {
-    position:relative;
+    position: relative;
     width: 1440px;
     background: #d9d9d9;
     height: 225px;
@@ -507,7 +513,7 @@ footer a {
         margin-left: 67px;
     }
 
-       /***** filters******/
+    /***** filters******/
     #filters .button {
         margin-top: 10px;
     }
@@ -558,6 +564,7 @@ footer a {
     }
 
     #populaires>article {
+        position: relative;
         display: inline-flex;
         flex-direction: row;
         width: 270px;
@@ -580,6 +587,10 @@ footer a {
     #populaires article ul {
         font-size: 67%;
         bottom: 11px;
+    }
+
+    #populaires article .populars-stars {
+        position: absolute;
     }
 
     /****** hobbies******/
@@ -762,6 +773,7 @@ footer a {
     }
 
     #populaires>article {
+        position: relative;
         display: inline-block;
         width: 350px;
         height: 144px;
@@ -783,18 +795,11 @@ footer a {
 
     #populaires article p {
         margin-top: 12px;
-    }
-
-    #populaires article p {
-        margin-bottom: 12px;
-    }
-
-    #populaires article ul li {
-        margin-top: 50px;
+        /* margin-bottom: 12px; */
     }
 
     #populaires article .populars-stars {
-        margin-top: -15px;
+        position: absolute;
     }
 
     /***** hebergements*****/
