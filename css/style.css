@@ -1,4 +1,4 @@
-/* Desktop */
+/***** Desktop *****/
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* animations */
+/***** animations *****/
 .anim-scale:hover {
     transform: scale(.9);
     transition: .7s;
@@ -110,7 +110,7 @@ label {
     display: none;
 }
 
-/* classes*/
+/***** classes*****/
 .loader-container {
     position: absolute;
     /* background: #D9D9D9; */
@@ -205,18 +205,13 @@ label {
 
 .descrip {
     transition: .7s;
-
 }
 
 .description {
     margin-left: 5px;
 }
 
-/* .etoile {
-    top: 50px;
-} */
-
-/* structure */
+/***** structure *****/
 #content {
     width: 1440px;
     margin: auto;
@@ -278,17 +273,20 @@ label {
     font-size: 20px;
 }
 
-#submit {
-    background: #0065fc;
-    color: #fff;
-    border-radius: 0 20px 20px 0;
-    padding: 14px 16px;
+.submit{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
     border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
     cursor: pointer;
 }
 
-#submit-mobile {
-    display: none;
+.submit-icon {
+    display:none; 
 }
 
 #filters {
@@ -318,7 +316,7 @@ label {
 #logo-info {
     align-items: center;
     padding: 0 8px;
-    border: #D9D9D9 1px solid;
+    border: #d9d9d9 1px solid;
     border-radius: 50%;
 }
 
@@ -333,7 +331,7 @@ label {
     border-radius: 50%;
 }
 
-/* hébergements */
+/***** hébergements *****/
 #hebergements {
     position: relative;
     display: block;
@@ -383,7 +381,7 @@ label {
     font-weight: 900;
 }
 
-/* populaires */
+/***** populaires *****/
 #populaires {
     background: #d9d9d9;
     margin-top: 39px;
@@ -435,7 +433,7 @@ label {
     position: absolute;
 }
 
-/* Activités */
+/***** Activités *****/
 #hobbies {
     width: 1440px;
     height: 493px;
@@ -458,7 +456,7 @@ label {
     margin-top: 22px;
 }
 
-/* footer */
+/***** footer *****/
 #footer {
     position: relative;
     width: 1440px;
@@ -497,7 +495,7 @@ footer a {
 
 
 
-/* Tablette */
+/***** Tablette *****/
 @media screen and (max-width:1024px) {
 
     #content {
@@ -655,61 +653,80 @@ footer a {
 @media screen and (max-width:375px) {
 
     #content {
-        box-sizing: content-box;
-        max-width: 375px;
         margin: 0;
         padding: 0;
+        max-width: 374px;
+        overflow-x:hidden;
     }
 
+    h1 {
+        margin-top: 31px;
+        padding: 5px;
+    }
+
+    h2{
+        padding: 5px;
+    }
+
+    .loader-container {
+        position: absolute;
+        display: none;
+    }
+    
     /***** header*****/
     #primary-header {
         display: block;
         margin-top: 21px;
+        border-top: none;
         border-bottom: 3px solid #d9d9d9;
-        padding-bottom: 60px;
+        padding-bottom: 95px;
+        padding-left: 10px;
     }
 
     #primary-header img {
         display: block;
-        margin: auto;
+        margin: auto auto 20px auto;
         width: 69px;
         height: 19px;
         padding-left: 4px;
     }
 
     #primary-nav {
-        max-width: 375px;
+        max-width: 374px;
     }
 
     #primary-nav ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: nowrap;
     }
 
     #primary-nav ul li {
         font-size: 16px;
+        padding: 10px 11px;
     }
 
     #primary-nav ul li a {
-        padding: 36px;
+        padding: 48px 30px 0 20px;
     }
 
     #primary-nav li a:hover {
-        margin-top: 0;
+        margin-top: 48px;
         color: #0065fc;
+        border-top:none;
         border-bottom: solid 3px #0065fc;
         padding-bottom: 15px;
     }
 
-
     /***** barre de recherche *****/
+
     #locali {
         background-color: #d9d9d9;
         border-radius: 10px 0 0 10px;
         height: 50px;
         width: 50px;
         font-size: 100%;
+        margin-left: 5px;
     }
 
     #search {
@@ -719,20 +736,31 @@ footer a {
         font-size: 100%;
     }
 
-    /*#submit {
-        content: "\f002";
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 15px 15px 0;
-        background: #0065fc;
+    /***** Boutton Recherche *****/
+    .submit{
+        background-color: #0065FC;
         color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        padding: 0 1.5rem;
+        font-family: "Raleway", "Sans serif";
+        font-size: 1rem;
         cursor: pointer;
-        width: 50px;
-    } */
+    }
 
+    .submit-icon {
+        display:block; 
+    }
+    
+    .submit-text {
+        display:none;
+    }
+
+    
     /*****filters******/
     #filters {
-        margin: 34px 0 15px 0;
+        margin: 5px;
         flex-wrap: wrap;
     }
 
@@ -749,6 +777,9 @@ footer a {
     }
 
     /****info******/
+    #info {
+        padding: 5px;
+    }
     #logo-info {
         border: #d9d9d9 solid 2px;
         border-radius: 50%;
@@ -791,6 +822,7 @@ footer a {
 
     #populaires article h4 {
         margin-top: 12px;
+        margin-right: 5px;
     }
 
     #populaires article p {
@@ -805,7 +837,7 @@ footer a {
     /***** hebergements*****/
     #hebergements {
         width: 100%;
-        padding: 5%;
+        padding: 0;
         height: 1430px;
         background-color: #fff;
     }
@@ -845,7 +877,8 @@ footer a {
     }
 
     #hebergements h3 {
-        margin-left: -55px;
+        margin-left: -25px;
+        width: 120px;
     }
 
     /******hobbies*****/
@@ -853,7 +886,7 @@ footer a {
     #hobbies {
         width: 375px;
         height: 55rem;
-        margin: 70px 0;
+        margin: 70px 5px;
     }
 
     #hobbies .activity-card {
