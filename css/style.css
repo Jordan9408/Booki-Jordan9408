@@ -273,7 +273,7 @@ label {
     font-size: 20px;
 }
 
-.submit{
+.submit {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
@@ -286,7 +286,7 @@ label {
 }
 
 .submit-icon {
-    display:none; 
+    display: none;
 }
 
 #filters {
@@ -656,7 +656,7 @@ footer a {
         margin: 0;
         padding: 0;
         max-width: 374px;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
     h1 {
@@ -664,7 +664,7 @@ footer a {
         padding: 5px;
     }
 
-    h2{
+    h2 {
         padding: 5px;
     }
 
@@ -672,7 +672,7 @@ footer a {
         position: absolute;
         display: none;
     }
-    
+
     /***** header*****/
     #primary-header {
         display: block;
@@ -713,7 +713,7 @@ footer a {
     #primary-nav li a:hover {
         margin-top: 48px;
         color: #0065fc;
-        border-top:none;
+        border-top: none;
         border-bottom: solid 3px #0065fc;
         padding-bottom: 15px;
     }
@@ -737,7 +737,7 @@ footer a {
     }
 
     /***** Boutton Recherche *****/
-    .submit{
+    .submit {
         background-color: #0065FC;
         color: white;
         font-weight: bold;
@@ -750,14 +750,14 @@ footer a {
     }
 
     .submit-icon {
-        display:block; 
-    }
-    
-    .submit-text {
-        display:none;
+        display: block;
     }
 
-    
+    .submit-text {
+        display: none;
+    }
+
+
     /*****filters******/
     #filters {
         margin: 5px;
@@ -780,6 +780,7 @@ footer a {
     #info {
         padding: 5px;
     }
+
     #logo-info {
         border: #d9d9d9 solid 2px;
         border-radius: 50%;
